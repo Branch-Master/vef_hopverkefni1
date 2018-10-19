@@ -6,9 +6,8 @@
   "scripts": {
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "sass": "node-sass --source-map-embed styles.scss styles.css",
-    "sass-watch": "node-sass --source-map-embed --watch ./scss --recursive styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
     "dev": "npm-run-all --parallel sass sass-watch browser-sync",
-    "lint-css": "stylelint styles.css",
     "lint": "stylelint styles.scss --syntax scss"
   },
   "author": "Marinó, Birgir Orri, Adam",
