@@ -1,10 +1,58 @@
-header{
 
+header{
     height: 30vh;
-    background-color: red;
+    background-color: rgb(50,100,50);
+}
+
+.header__grid{
+
+    max-width: 1200px;
+    margin:auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__title{
+    margin:auto;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+}
+
+.header__pages{
+    display: flex;
+    flex-direction: row;
+    width:100%;
 }
 
 header h1{
     margin: auto;
-    align-content: center;
+    text-align: center;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+    
+}
+
+.btn{
+    border:none;
+    background-color: rgb(50,100,50);
+}
+
+.btn a{
+    display: flex;
+    flex-direction: row;
+    
+}
+ 
+.btn img{
+    height: 20px;
+    width:20px;
 }
