@@ -1,3 +1,84 @@
-.grid{
 
+$max-width: 1200px;
+$gutter: 20px;
+
+@mixin row() {
+  display: flex;
+
+  margin-right: -($gutter / 2);
+  margin-left: -($gutter / 2);
+}
+
+@mixin columns($col: 1) {
+  // margföldum með "1%" til að breyta gildi í prósentu gildi
+  width: ($col / 12 * 100) * 1%;
+
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+}
+
+.grid{
+    max-width: 1200px;
+    margin:auto;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.grid__row{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-text{
+    @include columns(6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.col-img{
+    @include columns(6);
+}
+
+.col-img img{
+    max-width:100%;
+}
+
+.col-text button{
+    border: none;
+    width:50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: rgb(150,50,50);
+}
+
+.product-card{
+    
+    display: flex;
+    flex-direction: column;
+    @include columns(4);
+    margin-bottom: 20px;
+
+}
+
+.product__img{
+    width:100%;
+
+    & img{
+        width:100%;
+    }
+}
+
+//staff
+
+.grid_col{
+    @include columns(6);
+    padding: 20px;
 }
