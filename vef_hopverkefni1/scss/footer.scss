@@ -1,8 +1,8 @@
 footer{
     
     height: 20vh;
-    background-color: #dddddd;
-    height: 30vh;
+    background-color:#ddd;
+    height: 40vh;
     width:100%;
 
 }
@@ -14,7 +14,7 @@ footer{
 }
 
 .footer__grid__row{
-
+    margin-top: 40px;
     display:flex;
     justify-content: space-around;
     flex-wrap:wrap;
