@@ -24,31 +24,40 @@ $gutter: 20px;
     padding-top: 20px;
 }
 
-.grid__row{
+
+
+//======================
+// INDEX
+//======================
+
+.index__grid__row{
     display:flex;
-    justify-content: space-around;
+    //justify-content: space-around;
+     flex-direction: row;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -10px;
-    margin-right: -10px;
+   
+    width:100%;
+    //margin-left: -10px;
+    //margin-right: -10px;
+    
 }
 
-.col-text{
+.index__grid__col-text{
     @include columns(6);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
 }
-.col-img{
+.index__grid__col-img{
     @include columns(6);
-}
 
-.col-img img{
+img{
     max-width:100%;
 }
+}
 
-.col-text button{
+.index__grid__col-text button{
     border: none;
     width:50%;
     padding-top: 10px;
@@ -59,12 +68,62 @@ $gutter: 20px;
     background-color: rgb(150,50,50);
 }
 
+//======================
+// PRODUCTS
+//======================
+.prod__grid__row{
+    display:flex;
+    //justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    width:100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+}
+
 .product-card{
     
     display: flex;
     flex-direction: column;
-    @include columns(4);
+    
+    padding:0px;
+
+   @media(min-width: 1px) and (max-width: 500px){
+    @include columns(12);
     margin-bottom: 20px;
+    margin-left:10px;
+    margin-right:10px; 
+   }
+
+   @media(min-width:500px) and (max-width: 800px){
+       @include columns(6);
+       
+     
+   }
+}
+
+@media(min-width:500px) and (max-width: 800px){
+
+    .prod__grid__row:nth-child(odd){
+        margin-left:10px;
+    }
+
+    .prod__grid__row:nth-child(even){
+        margin-right:20px;
+    }
+
+}
+
+
+
+
+.product-card .btn{
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 3px;
+
 
 }
 
@@ -76,9 +135,28 @@ $gutter: 20px;
     }
 }
 
-//staff
+//======================
+// STAFF
+//======================
 
-.grid_col{
+
+.staff__grid__row{
+    display:flex;
+    //justify-content: space-around;
+     flex-direction: row;
+    flex-wrap: wrap;
+   
+    width:100%;
+    //margin-left: -10px;
+    //margin-right: -10px;
+    
+}
+
+.staff__grid__col{
     @include columns(6);
-    padding: 20px;
+
+    img{
+        width:100%;
+    }
+    
 }
