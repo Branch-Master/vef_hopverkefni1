@@ -3,6 +3,7 @@
 // PRODUCTS
 //======================
 .prod__grid__row{
+    font-family: 'helvetica', 'sans-serif';
     display:flex;
     
     flex-direction: row;
@@ -12,17 +13,20 @@
     margin-left: -10px;
     margin-right: -10px;
     margin-top:20px;
+
 }
 
 .product-card{
     
     display: flex;
     flex-direction: column;
+    //justify-content: space-between;
     
     padding:0px;
     margin-bottom: 40px;
 
-   @media(min-width: 1px) and (max-width: 500px){
+
+   @media(min-width: 0px) and (max-width: 500px){
     @include columns(12);
     
     margin-left: 20px;
@@ -31,19 +35,20 @@
     
    }
 
-   @media(min-width:500px) and (max-width: 800px){
+   @media(min-width:501px) and (max-width: 1200px){
        
         @include columns(6);
           
    }
 
-   @media(min-width:800px){
-      @include columns(4);
+   @media(min-width:1200px){
+     //@include columns(4);
+     max-width: 33.33333%;
       
    }
 }
 
-@media(min-width:500px) and (max-width: 800px){
+@media(min-width:501px) and (max-width: 1200px){
 
     .prod__grid__row .product-card:nth-child(odd){
         padding-left:30px;
@@ -56,32 +61,48 @@
 
 }
 
-@media(min-width:800px){
+@media(min-width:1200px){
+
+    .prod__grid__row{
+        margin-left:0px;
+        margin-right: 0px;
+    }
+
+
     .prod__grid__row .product-card:nth-child(3n+1){
-        //margin-left: 10px;
+        
         //padding-left:10px;
-        //padding-right:4px;
-        padding:0px;
-        //margin-left:10px;
+        padding-right:14px;
         
     }
 
     .prod__grid__row .product-card:nth-child(3n+2){
-        //padding-left:16px;
-        //padding-right:0px;
-        padding:0px;
-        margin:0px;
+        padding-left:6px;
+        padding-right:6px;
+        
     }
 
     .prod__grid__row .product-card:nth-child(3n+3){
-        //padding-left:22px;
+        padding-left:14px;
         //padding-right:0px;
-        padding:0px;
-        margin:0px;
+       
     }
 
 }
 
+.prod__price{
+    font-weight: bold;
+    
+}
+
+.product-card h2{
+    font-family: 'Serif', sans-serif;
+    padding-bottom: 16px;
+}
+
+.product-card p{
+    padding-bottom: 0px;
+}
 
 
 .product-card .btn{
@@ -89,11 +110,11 @@
     border: solid 1px gray;
     border-radius: 3px;
 
-
 }
 
 .product__img{
     width:100%;
+    
 
     & img{
         width:100%;
