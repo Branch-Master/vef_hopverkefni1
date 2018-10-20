@@ -1,4 +1,4 @@
-
+@import "main_grid";
 //======================
 // PRODUCTS
 //======================
@@ -9,9 +9,6 @@
     flex-wrap: wrap;
    
     width:100%;
-    margin-left: -10px;
-    margin-right: -10px;
-    
 }
 
 .product-card{
@@ -24,12 +21,14 @@
    @media(min-width: 1px) and (max-width: 500px){
     @include columns(12);
     margin-bottom: 20px;
-    margin-left:10px;
-    margin-right:10px; 
+    margin-left: 20px;
+    margin-right: 0px;
+    
    }
 
    @media(min-width:500px) and (max-width: 800px){
        @include columns(6);
+       margin-right: 10px;
        
      
    }
