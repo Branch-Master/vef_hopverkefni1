@@ -1,8 +1,6 @@
-@import "main_grid"
+@import "main_grid";
 
-h2 {
-    font-size: 100px;
-}
+
 
 .cart__product__img {
     @include columns(4);
