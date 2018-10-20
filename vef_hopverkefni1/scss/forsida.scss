@@ -2,7 +2,9 @@
 //======================
 // INDEX
 //======================
+.index__title {
 
+}
 .index__grid__row{
     display:flex;
     //justify-content: space-around;
@@ -39,4 +41,8 @@ img{
     padding-right: 20px;
     border-radius: 5px;
     background-color: rgb(150,50,50);
+}
+
+.index__grid__col-text h2 {
+    
 }
