@@ -1,0 +1,26 @@
+
+//======================
+// STAFF
+//======================
+
+
+.staff__grid__row{
+    display:flex;
+    //justify-content: space-around;
+     flex-direction: row;
+    flex-wrap: wrap;
+   
+    width:100%;
+    //margin-left: -10px;
+    //margin-right: -10px;
+    
+}
+
+.staff__grid__col{
+    @include columns(6);
+
+    img{
+        width:100%;
+    }
+    
+}
