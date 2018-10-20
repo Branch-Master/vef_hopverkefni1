@@ -9,6 +9,8 @@
     flex-wrap: wrap;
    
     width:100%;
+   // margin-left: -10px;
+   // margin-right: -10px;
 }
 
 .product-card{
@@ -27,21 +29,24 @@
    }
 
    @media(min-width:500px) and (max-width: 800px){
-       @include columns(6);
-       //margin-right: 10px;
+      // @include columns(6);
+
+      width:50%;
        
-     
+       // margin-left:20px;
+       // margin-right: 10px; 
    }
 }
 
 @media(min-width:500px) and (max-width: 800px){
 
     .prod__grid__row:nth-child(odd){
-        margin-left:10px;
+        margin-right:10px;
+        
     }
 
     .prod__grid__row:nth-child(even){
-        margin-right:20px;
+       
     }
 
 }
