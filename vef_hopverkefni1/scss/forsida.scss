@@ -1,20 +1,23 @@
-
 //======================
 // INDEX
 //======================
-.index__title {
+@import "main_grid";
 
-}
 .index__grid__row{
     display:flex;
-    //justify-content: space-around;
-     flex-direction: row;
+    flex-direction: row;
     flex-wrap: wrap;
-   
     width:100%;
-    //margin-left: -10px;
-    //margin-right: -10px;
-    
+
+    @media (max-width: 500px){
+        flex-direction: column;
+    }
+}
+
+.index__grid__row:nth-child(2){
+    @media(max-width:500px){
+        flex-direction: column-reverse;
+    }
 }
 
 .index__grid__col-text{
@@ -23,18 +26,42 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
+
+    @media (max-width: 500px){
+        @include columns(12);
+    }
 }
+
+.index__grid__col-img:nth-child(2){
+    @include columns(6);
+    padding-left:10px;
+    padding-right: 0px;
+    
+    img{
+        max-width:100%;
+    }
+
+    @media (max-width: 500px){
+        @include columns(12);
+    }
+}
+
 .index__grid__col-img{
     @include columns(6);
+    padding-left: 0px;
 
-img{
-    max-width:100%;
-}
+    img{
+        max-width:100%;
+    }
+
+    @media (max-width: 500px){
+        @include columns(12);
+    }
 }
 
 .index__grid__col-text button{
     border: none;
-    width:50%;
+    width:42%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -43,6 +70,91 @@ img{
     background-color: rgb(150,50,50);
 }
 
+//letur og leturstærð fyrir Fyrirsagnir h2
 .index__grid__col-text h2 {
-    
+    font-family: 'Serif', sans-serif;
+    font-size: 28px;
 }
+
+//Fyrri fyrirsögnin við msimundandi stærðir
+.index__h2-1 {
+    @include columns(8);
+    margin : -20px;
+
+    @media(max-width : 1200px){
+        margin : 0px;
+    }
+    @media (max-width: 500px) {
+        margin-bottom: 20px;
+    }
+}
+
+//Seinni Fyrirsögnin við mismunandi stærðir
+.index__h2-2 {
+    @include columns(8);
+    margin : -10px;
+
+    @media (max-width: 1200px) {
+        margin : 20px;
+    }
+    @media (max-width: 500px) {
+        margin : 0px;
+        margin-bottom: 20px;
+    }
+}
+
+//Letur og leturstærð fyrir texta undir fyrirsögnum
+.index__grid__col-text p {
+    font-family: 'helvetica', 'sans-serif';
+    font-size: 24px;
+}
+
+//Hvernig fyrri textinn hegðar sér við mismunandi stærðir
+.index__p-1 {
+    @include columns(12);
+    margin : -20px;
+
+    @media(max-width : 1200px){
+        margin : 0px;
+    }
+    @media (max-width: 500px) {
+        margin-bottom: 20px;
+    }
+}
+
+//Hvernig seinni textinn hegðar sér við mismunandi stærðir
+.index__p-2 {
+    margin : 0px;
+
+    @media (max-width: 1200px){
+        margin : 30px;
+    }
+    @media (max-width: 500px) {
+        margin : 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.index__takki-1 {
+    margin-left: -10px;
+
+    @media (max-width: 1200px){
+        margin-left: 10px;
+    }
+    @media (max-width: 500px){
+        margin-bottom: 20px;
+    }
+}
+
+.index__takki-2 {
+    margin-left: 0px;
+
+    @media (max-width: 1200px){
+        margin-left: 30px;
+    }
+    @media (max-width: 500px){
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
