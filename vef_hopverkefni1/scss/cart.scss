@@ -21,9 +21,11 @@
     border-style: solid;
     border-color: grey;
     border-radius: 5px;
+    border-width: 1px;
     display: flex;
     font-size: 17px;
     background-color: white;
+    margin-top: 18px;
 }
 
 .cart__product input {
@@ -32,6 +34,7 @@
     border-style: solid;
     border-color: grey;
     border-radius: 5px;
+    border-width: 1px;
 }
 
 .cart__product label {
@@ -47,4 +50,17 @@
 
 .cart__product__form {
     display: flex;
+}
+
+.cart__form {
+    display: flex;
+    flex-direction: row;
+    @include columns(8);
+    margin: auto;
+}
+
+.cart__form-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
