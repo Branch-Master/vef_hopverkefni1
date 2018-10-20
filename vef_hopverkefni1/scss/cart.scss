@@ -1,0 +1,7 @@
+@import "main_grid";
+
+
+
+.cart__product__img {
+    @include columns(4);
+}
