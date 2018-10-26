@@ -79,13 +79,8 @@ h1, h2, h3 {
     border-radius: 5px;
     background-color: rgb(200,150,150);
 
-<<<<<<< HEAD
-    transition: color 0.3s ease-in-out;                  //fade
-    transition: background-color 0.3s ease-in-out;
-=======
     transition: color 0.4s ease;                  //fade
     transition: background-color 0.4s ease;
->>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 
     a{
         text-decoration: none;
@@ -179,8 +174,6 @@ h1, h2, h3 {
     @media (max-width: 500px){
         margin-bottom: $gutter;
     }
-
-    
 }
 
 //hvernig seinni takkinn hegðar sér við mismunandi stærðir
@@ -194,6 +187,5 @@ h1, h2, h3 {
         margin-left: $gutter/2;
         margin-bottom: $gutter;
     }
-  
 }
 
