@@ -1,8 +1,8 @@
 @import "main_grid";
 
 .grid > * {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: $gutter;
+    margin-top: $gutter;
 }
 
 .grid > h2 {
@@ -13,14 +13,14 @@
 }
 
 .cart__product__info h2 {
-    margin-bottom: 10px;
+    margin-bottom: $gutter;
 }
 
 .cart__product {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
 
     @media(max-width : 700px){
         flex-direction: column;
@@ -70,8 +70,8 @@
 
     h1{
         @media(max-width : 700px){
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: $gutter;
+            margin-bottom: $gutter;
         }
     }
 }
@@ -94,7 +94,7 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
-        margin-right: 5px;
+        margin-right: $gutter/2;
     }
 
     button {
@@ -107,13 +107,13 @@
         display: flex;
         font-size: 17px;
         background-color: white;
-        margin-right: 5px;
+        margin-right: $gutter/2;
         transition: background-color 0.3s ease-in-out;                  //fade
 
         img {
             height: 20px;
             width: 20px;
-            margin-right: 7px;
+            margin-right: $gutter/2;
         }
     }
 
@@ -126,8 +126,8 @@
     width: 225px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
 
     button{
         border: none;
@@ -201,7 +201,7 @@
         padding-left: 0px;
 
         h1{
-            margin-top: 20px;
+            margin-top: $gutter;
         }
     }
 }
@@ -210,7 +210,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: $gutter;
 
     input {
         width: 60%;
@@ -232,5 +232,7 @@
 }
 
 .cart__cost {
+    font-size: 22px;
     font-weight: bold;
+    margin-bottom: $gutter/2;
 }

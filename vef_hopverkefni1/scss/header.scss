@@ -50,7 +50,7 @@ header ul{
     margin: auto;
 
     li{
-        margin: 10px;
+        margin: $gutter/2;
     }
 
     li a{
@@ -73,15 +73,15 @@ header ul{
     background-color: #afb281;
     margin-top: -25px;
     width: 86px;
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: $gutter/2;
     display: block;
 
     @media (max-width: 600px){
         margin-left: auto;
         margin-right: auto;
-        margin-top: 10px;
+        margin-top: $gutter/2;
     }
 }
 
