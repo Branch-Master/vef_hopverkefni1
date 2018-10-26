@@ -3,6 +3,15 @@
 //======================
 @import "main_grid";
 
+a, p {
+    font-family: Sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Serif';
+}
+
+
 .index__grid__row{
     display:flex;
     flex-direction: row;
@@ -93,7 +102,6 @@
 
 //letur og leturstærð fyrir Fyrirsagnir h2
 .index__grid__col-text h2 {
-    font-family: 'Serif', sans-serif;
     font-size: 28px;
 }
 
