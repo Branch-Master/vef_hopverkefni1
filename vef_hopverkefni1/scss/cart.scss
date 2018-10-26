@@ -13,7 +13,15 @@
 }
 
 .cart__product__info h2 {
+<<<<<<< HEAD
     margin-bottom: $gutter/2;
+=======
+<<<<<<< HEAD
+    margin-bottom: 10px;
+=======
+    margin-bottom: $gutter;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
+>>>>>>> cbcbace76a5ec1e487a776795bc4f5ca15fc575b
 }
 
 .cart__product {
@@ -94,7 +102,11 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
+<<<<<<< HEAD
+        margin-right: 10px;
+=======
         margin-right: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
     }
 
     button {
@@ -107,13 +119,32 @@
         display: flex;
         font-size: 17px;
         background-color: white;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        margin-right: 10px;
+        transition: background-color 0.4s ease;                  //fade
+=======
+        margin-right: 5px;
+        transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
+=======
+        margin-right: 5px;
+        transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
+=======
         margin-right: $gutter/2;
         transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 
         img {
             height: 20px;
             width: 20px;
+<<<<<<< HEAD
+            margin-right: 10px;
+=======
             margin-right: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
         }
     }
 
@@ -138,13 +169,20 @@
         padding-right: 20px;
         border-radius: 5px;
         background-color: rgb(200, 150, 150);
-        transition: color 0.4s ease;
-        transition: background-color 0.4s ease;
+        transition: color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
 
         a {
             text-decoration: none;
         }
 
+<<<<<<< HEAD
+=======
+        a {
+            text-decoration: none;
+        }
+
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
         a:link, a:visited {
             color: black;
         }
@@ -234,5 +272,9 @@
 .cart__cost {
     font-size: 22px;
     font-weight: bold;
+<<<<<<< HEAD
+    margin-bottom: 10px;
+=======
     margin-bottom: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 }

@@ -121,7 +121,11 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
+<<<<<<< HEAD
+        margin-right: 5px;
+=======
         margin-right: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
         width: 100%;
     }
 
@@ -135,8 +139,13 @@
         display: flex;
         font-size: 17px;
         background-color: white;
+<<<<<<< HEAD
+        transition: background-color 0.3s ease-in-out;
+        min-width: 130px;
+=======
         transition: background-color 0.4s ease;
         min-width: 135px;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 
         img {
             height: 20px;
