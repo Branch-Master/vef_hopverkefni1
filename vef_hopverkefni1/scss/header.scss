@@ -1,35 +1,39 @@
 
 header{
-    height: 30vh;
-    background-color: rgb(50,100,50);
+    height: 20vh;
+    background-color: #afb281;
+    font-family: 'Oswald', Verdana, serif;
 }
 
 .header__grid{
-
     max-width: 1200px;
     margin:auto;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .header__title{
-    margin:auto;
-    padding-top: 20px;
-    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    height: 50%;
+
+    h1 {
+        font-size: 6.5vh;
+        padding-top: 1vh;
+    }
 }
 
 .header__pages{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width:100%;
 }
 
-header h1{
-    margin: auto;
-    text-align: center;
+.header__pages2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 header ul{
@@ -43,7 +47,13 @@ header ul{
 
 .btn{
     border:none;
-    background-color: rgb(50,100,50);
+    background-color: #afb281;
+    margin-top: -25px;
+    width: 7%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 0px;
+    display: block;
 }
 
 .btn a{
