@@ -94,7 +94,7 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     button {
@@ -109,6 +109,7 @@
         background-color: white;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         margin-right: 10px;
         transition: background-color 0.4s ease;                  //fade
 =======
@@ -119,11 +120,15 @@
         margin-right: 5px;
         transition: background-color 0.3s ease-in-out;                  //fade
 >>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
+=======
+        margin-right: 5px;
+        transition: background-color 0.4s ease;                  //fade
+>>>>>>> parent of 83eb97d... sv
 
         img {
             height: 20px;
             width: 20px;
-            margin-right: 10px;
+            margin-right: 7px;
         }
     }
 
@@ -148,8 +153,8 @@
         padding-right: 20px;
         border-radius: 5px;
         background-color: rgb(200, 150, 150);
-        transition: color 0.3s ease-in-out;
-        transition: background-color 0.3s ease-in-out;
+        transition: color 0.4s ease;
+        transition: background-color 0.4s ease;
 
         a {
             text-decoration: none;
@@ -242,7 +247,5 @@
 }
 
 .cart__cost {
-    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
