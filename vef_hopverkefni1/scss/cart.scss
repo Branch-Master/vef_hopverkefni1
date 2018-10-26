@@ -10,7 +10,8 @@
 .cart__product__img {
     @include columns(4);
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 13.333px;
+    height: 200px;
 
     img {
         width: 100%;
@@ -20,7 +21,7 @@
 .cart__product__text {
     @include columns(8);
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 6.667px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -69,6 +70,8 @@
     display: flex;
     flex-direction: row;
     @include columns(8);
+    padding-left: 3px;
+    padding-right: 3px;
     margin: auto;
 }
 
@@ -76,6 +79,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-right: 10px;
+}
+
+.cart__form-col:nth-of-type(2){
+    padding-right: 0px;
+    padding-left: 10px;
 }
 
 .cart__form-col__input {
