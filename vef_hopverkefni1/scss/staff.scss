@@ -2,18 +2,19 @@
 //======================
 // STAFF
 //======================
-
+.grid{
+    display: flex;
+    flex-direction: column;
+}
 
 .staff__grid__row{
     display:flex;
-    //justify-content: space-around;
-     flex-direction: row;
-    flex-wrap: wrap;
-   
-    width:100%;
-    //margin-left: -10px;
-    //margin-right: -10px;
-    
+    flex-direction: row;
+    padding-top: 20px;
+
+    @media (min-width: 750px) {
+        flex-direction: row;
+    }
 }
 
 .staff__grid__col{
@@ -22,5 +23,38 @@
     img{
         width:100%;
     }
-    
 }
+
+.staff__grid__col:nth-child(1){
+    padding-left: 0px;
+}
+
+.staff__grid__col:nth-child(2){
+    padding-right: 0px;
+}
+
+.staff__cards {
+    transform-style: preserve-3d; /* stackast í þrívídd */
+    transition: transition;
+    position: relative;
+    width: 100%;
+}
+
+.staff__grid__col:hover .staff_cards {
+    transform: rotateY(180deg);
+}
+
+.face{
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.face.back{
+    display: block;
+    transform: rotateY(180deg); /* sjáum ekki bakhliðina strax */
+    font-size: 36px;
+}
+
+
+
+
