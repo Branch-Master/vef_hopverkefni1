@@ -79,8 +79,13 @@ h1, h2, h3 {
     border-radius: 5px;
     background-color: rgb(200,150,150);
 
+<<<<<<< HEAD
     transition: color 0.3s ease-in-out;                  //fade
     transition: background-color 0.3s ease-in-out;
+=======
+    transition: color 0.4s ease;                  //fade
+    transition: background-color 0.4s ease;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 
     a{
         text-decoration: none;
@@ -108,27 +113,27 @@ h1, h2, h3 {
 //Fyrri fyrirsögnin við msimundandi stærðir
 .index__h2-1 {
     @include columns(8);
-    margin : -20px;
+    margin : -$gutter;
 
     @media(max-width : 1200px){
         margin : 0px;
     }
     @media (max-width: 500px) {
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
     }
 }
 
 //Seinni Fyrirsögnin við mismunandi stærðir
 .index__h2-2 {
     @include columns(8);
-    margin : -10px;
+    margin : -$gutter/2;
 
     @media (max-width: 1200px) {
-        margin : 20px;
+        margin : $gutter;
     }
     @media (max-width: 500px) {
         margin : 0px;
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
     }
 }
 
@@ -141,13 +146,13 @@ h1, h2, h3 {
 //Hvernig fyrri textinn hegðar sér við mismunandi stærðir
 .index__p-1 {
     @include columns(12);
-    margin : -20px;
+    margin : -$gutter;
 
     @media(max-width : 1200px){
         margin : 0px;
     }
     @media (max-width: 500px) {
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
     }
 }
 
@@ -156,23 +161,23 @@ h1, h2, h3 {
     margin : 0px;
 
     @media (max-width: 1200px){
-        margin : 30px;
+        margin : $gutter+$gutter/2;
     }
     @media (max-width: 500px) {
-        margin : 10px;
-        margin-bottom: 20px;
+        margin : $gutter/2;
+        margin-bottom: $gutter;
     }
 }
 
 //hvernig fyrri takkinn hegðar sér við mismunandi stærðir
 .index__takki-1 {
-    margin-left: -10px;
+    margin-left: -$gutter/2;
 
     @media (max-width: 1200px){
-        margin-left: 10px;
+        margin-left: $gutter/2;
     }
     @media (max-width: 500px){
-        margin-bottom: 20px;
+        margin-bottom: $gutter;
     }
 
     
@@ -183,11 +188,11 @@ h1, h2, h3 {
     margin-left: 0px;
 
     @media (max-width: 1200px){
-        margin-left: 30px;
+        margin-left: $gutter+$gutter/2;
     }
     @media (max-width: 500px){
-        margin-left: 10px;
-        margin-bottom: 20px;
+        margin-left: $gutter/2;
+        margin-bottom: $gutter;
     }
   
 }

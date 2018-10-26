@@ -1,8 +1,8 @@
 @import "main_grid";
 
 .grid > * {
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: $gutter;
+    margin-top: $gutter;
 }
 
 .grid > h2 {
@@ -13,14 +13,18 @@
 }
 
 .cart__product__info h2 {
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+    margin-bottom: $gutter;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 }
 
 .cart__product {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
 
     @media(max-width : 700px){
         flex-direction: column;
@@ -70,8 +74,8 @@
 
     h1{
         @media(max-width : 700px){
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: $gutter;
+            margin-bottom: $gutter;
         }
     }
 }
@@ -94,7 +98,11 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
+<<<<<<< HEAD
         margin-right: 10px;
+=======
+        margin-right: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
     }
 
     button {
@@ -109,6 +117,7 @@
         background-color: white;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         margin-right: 10px;
         transition: background-color 0.4s ease;                  //fade
 =======
@@ -119,11 +128,19 @@
         margin-right: 5px;
         transition: background-color 0.3s ease-in-out;                  //fade
 >>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
+=======
+        margin-right: $gutter/2;
+        transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 
         img {
             height: 20px;
             width: 20px;
+<<<<<<< HEAD
             margin-right: 10px;
+=======
+            margin-right: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
         }
     }
 
@@ -136,8 +153,8 @@
     width: 225px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: $gutter;
+    margin-bottom: $gutter;
 
     button{
         border: none;
@@ -155,6 +172,13 @@
             text-decoration: none;
         }
 
+<<<<<<< HEAD
+=======
+        a {
+            text-decoration: none;
+        }
+
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
         a:link, a:visited {
             color: black;
         }
@@ -211,7 +235,7 @@
         padding-left: 0px;
 
         h1{
-            margin-top: 20px;
+            margin-top: $gutter;
         }
     }
 }
@@ -220,7 +244,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: $gutter;
 
     input {
         width: 60%;
@@ -244,5 +268,9 @@
 .cart__cost {
     font-size: 22px;
     font-weight: bold;
+<<<<<<< HEAD
     margin-bottom: 10px;
+=======
+    margin-bottom: $gutter/2;
+>>>>>>> 613246a7f7db880729c7ad2a54f696ff8cf8a32e
 }

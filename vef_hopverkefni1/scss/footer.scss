@@ -21,7 +21,7 @@ footer{
 }
 
 .footer__grid__row{
-    margin-top: 40px;
+    margin-top: $gutter*2;
     display:flex;
     justify-content: space-around;
     flex-wrap:wrap;
@@ -73,7 +73,7 @@ footer{
 
 //footer fiff
 footer h2{
-    margin-bottom: 20px;
+    margin-bottom: $gutter;
 }
 
 //footer fiff
@@ -90,7 +90,7 @@ footer ul{
 
 //setja bil á milli linka í footer
 footer ul li{
-    margin-bottom:15px;
+    margin-bottom:$gutter/2;
 }
 
 // stemma af lista itemin á réttan stíl
@@ -110,7 +110,7 @@ footer ul li a:hover{
 .bottom--center{
     margin-left:auto;
     margin-right:auto;
-    margin-top: 30px;
+    margin-top: $gutter*2;
     width: 100%;
     text-align: center;
 }
