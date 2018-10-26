@@ -5,11 +5,15 @@
     margin-top: 20px;
 }
 
-.grid > h1 {
+.grid > h2 {
     margin-bottom: 0px;
     @media(max-width : 1200px){
         padding-left: 20px;
     }
+}
+
+.cart__product__info h2 {
+    margin-bottom: 10px;
 }
 
 .cart__product {
@@ -90,7 +94,7 @@
         border-color: grey;
         border-radius: 5px;
         border-width: 1px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     button {
@@ -103,13 +107,23 @@
         display: flex;
         font-size: 17px;
         background-color: white;
-        margin-right: 5px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+        margin-right: 10px;
         transition: background-color 0.4s ease;                  //fade
+=======
+        margin-right: 5px;
+        transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
+=======
+        margin-right: 5px;
+        transition: background-color 0.3s ease-in-out;                  //fade
+>>>>>>> a0ed4df326e7fc9d0605c8610efc7e2ebd3c2735
 
         img {
             height: 20px;
             width: 20px;
-            margin-right: 7px;
+            margin-right: 10px;
         }
     }
 
@@ -134,18 +148,24 @@
         padding-right: 20px;
         border-radius: 5px;
         background-color: rgb(200, 150, 150);
-        transition: color 0.4s ease;
-        transition: background-color 0.4s ease;
+        transition: color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
 
-        button:hover{
-            background-color: black;
-            color: rgb(200, 150, 150);
+        a {
+            text-decoration: none;
+        }
+
+        a:link, a:visited {
+            color: black;
         }
     }
 
     button:hover {
         background-color: Black;
         color: rgb(200,150,150);
+        a:link, a:visited {
+            color:rgb(200, 150, 150);
+        }
     }
 }
 
@@ -219,4 +239,10 @@
     select {
         width: 25%;
     }
+}
+
+.cart__cost {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }

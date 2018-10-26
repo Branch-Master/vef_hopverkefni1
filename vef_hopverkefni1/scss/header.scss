@@ -2,7 +2,6 @@
 header{
     height: 20vh;
     background-color: #afb281;
-    font-family: 'Oswald', Verdana, serif;
 }
 
 .header__grid{
@@ -30,7 +29,7 @@ header{
     width:100%;
 
     button a{
-        transition: color 0.4s ease;
+        transition: color 0.3s ease-in-out;
         font-size: 1.6vh;
     }
 
@@ -55,8 +54,8 @@ header ul{
     }
 
     li a{
-        transition: color 0.4s ease;
-        color: #333;
+        transition: color 0.3s ease-in-out;
+        color: black;
         font-weight: bold;
         text-decoration: none;
     }
