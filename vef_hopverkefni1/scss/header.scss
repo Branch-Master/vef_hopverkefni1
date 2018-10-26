@@ -28,6 +28,17 @@ header{
     display: flex;
     flex-direction: column;
     width:100%;
+
+    button a{
+        transition: color 0.3s linear;
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+    }
+
+    button a:hover {
+        color: white;
+    }
+     
 }
 
 header ul{
@@ -35,8 +46,14 @@ header ul{
     display: flex;
     flex-direction: row;
     margin: auto;
-    
-    
+    li a{
+        transition: color 0.3s linear;
+        -webkit-transition: color 0.3s linear;
+        -moz-transition: color 0.3s linear;
+    }
+    li a:hover{
+        color: white;
+    }
 }
 
 .btn{
@@ -56,11 +73,13 @@ header ul{
     text-decoration: none;
     color:black;
     font-weight:bold;
-    
-    
 }
- 
+
 .btn img{
     height: 1em;
     width:20px;
+}
+
+ul li .pages__selected {
+    text-decoration: underline;
 }
