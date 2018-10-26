@@ -5,7 +5,7 @@
     margin-top: 20px;
 }
 
-.grid > h1 {
+.grid > h2 {
     margin-bottom: 0px;
     @media(max-width : 1200px){
         padding-left: 20px;
@@ -137,15 +137,21 @@
         transition: color 0.4s ease;
         transition: background-color 0.4s ease;
 
-        button:hover{
-            background-color: black;
-            color: rgb(200, 150, 150);
+        a {
+            text-decoration: none;
+        }
+
+        a:link, a:visited {
+            color: black;
         }
     }
 
     button:hover {
         background-color: Black;
         color: rgb(200,150,150);
+        a:link, a:visited {
+            color:rgb(200, 150, 150);
+        }
     }
 }
 
