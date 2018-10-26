@@ -4,7 +4,7 @@
 Til að keyra vefsíðuna þarf einingis að opna html skrána eins og hefðbundna síðu en ef einhverjar breytingar hafa orðið á skránum þarf að keyra dev fyrst áður en síðan er opnuð. Þegar dev er keyrt þá myndast styles.css skrá útfrá scss skránum.
 
 ## Uppsetning
-
+Eitthvað bull vantar hér um uppsetningu forritsins.
 
 ## Meðlimir hópsins
 Þeir sem unnu í verkefninu eru __Adam Jens Jóelsson(ajj10)__, __Birgir Orri Óðinsson(boo11)__ og __Marinó Kristjánsson(mak78)__.
