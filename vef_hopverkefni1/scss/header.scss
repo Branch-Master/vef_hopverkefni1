@@ -33,13 +33,18 @@ header{
         transition: color 0.3s linear;
         -webkit-transition: color 0.3s linear;
         -moz-transition: color 0.3s linear;
+        font-size: 1.6vh;
     }
 
     button a:hover {
         color: white;
     }
+    ul li a{
+        font-size: 2.2vh;
+    }
      
 }
+
 
 header ul{
     list-style-type: none;
@@ -60,11 +65,17 @@ header ul{
     border:none;
     background-color: #afb281;
     margin-top: -25px;
-    width: 7%;
+    width: 84px;
     margin-bottom: 20px;
     margin-left: auto;
-    margin-right: 0px;
+    margin-right: 10px;
     display: block;
+
+    @media (max-width: 600px){
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
 }
 
 .btn a{
@@ -76,10 +87,11 @@ header ul{
 }
 
 .btn img{
-    height: 1em;
+    height: 2vh;
     width:20px;
 }
 
+//fall til að undirstrika valda blaðsíðu
 ul li .pages__selected {
     text-decoration: underline;
 }
