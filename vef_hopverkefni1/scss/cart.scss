@@ -12,6 +12,10 @@
     }
 }
 
+.cart__product__info h2 {
+    margin-bottom: 10px;
+}
+
 .cart__product {
     display: flex;
     flex-direction: row;
@@ -225,4 +229,8 @@
     select {
         width: 25%;
     }
+}
+
+.cart__cost {
+    font-weight: bold;
 }
