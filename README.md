@@ -1,8 +1,7 @@
 # Hópaverkefni 1
 ## Keyrsla
 
-Til að keyra vefsíðuna þarf einingis að opna html skrána eins og hefðbundna síðu en ef einhverjar breytingar hafa orðið á skránum þarf að keyra dev fyrst áður en síðan er opnuð. Þegar dev er keyrt þá myndast styles.css skrá útfrá scss skránum.
-
+Til að opna vefsíðuna þarf fyrst að að keyra dev. Þegar dev er keyrt þá myndast styles.css skrá útfrá scss skránum. Eftir það er hægt að opna Vefsíðuna með index.html eins og hefðbundina vefsíðu.
 ## Uppsetning
 Eitthvað bull vantar hér um uppsetningu forritsins.
 
