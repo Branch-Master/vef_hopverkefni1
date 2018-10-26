@@ -1,14 +1,15 @@
 @import "main_grid";
 
-.grid > h1 {
-    @media(max-width : 1200px){
-        padding-left: 20px;
-    }
-}
-
 .grid > * {
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.grid > h1 {
+    margin-bottom: 0px;
+    @media(max-width : 1200px){
+        padding-left: 20px;
+    }
 }
 
 .cart__product {
