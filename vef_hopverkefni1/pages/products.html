@@ -1,203 +1,228 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vöruhúsið</title>
 
     <link rel="stylesheet" href="../grid.css">
     <link rel="stylesheet" href="../styles.css">
-  </head>
-  <body>
+</head>
 
-<header>
+<body>
+
+    <header>
         <div class="header__grid">
-                <div class="header__title"><h1> Vörur</h1></div>
-             <div class="header__pages">
+            <div class="header__title">
+                <h1> Vörur</h1>
+            </div>
+            <div class="header__pages">
                 <ul>
-                 <li><a href="../index.html">FORSÍÐA</a> </li>
-                 <li><a  class = "pages__selected" href="products.html">VÖRUR</a> </li>
-                 <li><a href="staff.html">STARFSFÓLK</a></li>
+                    <li><a href="../index.html">FORSÍÐA</a> </li>
+                    <li><a class="pages__selected" href="products.html">VÖRUR</a> </li>
+                    <li><a href="staff.html">STARFSFÓLK</a></li>
                 </ul>
                 <button class="btn"> <a href="cart.html"><img src="../img/cart.svg">Karfa (2)</a> </button>
-             </div>
-         </div>
-</header> 
-<main>
-
-    <div class="grid">
-
-    <div class="prod__grid__row">
-        <div class="product-card">
-            <div class="product__img"> 
-                <img src="../img/watch.jpg" alt="watch">
-            </div>
-            <div class="product__info">
-                   <h2> Ótrúlegt úr</h2>
-                    <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
-                    
-                </div>
-            <div class="product__order">
-                <p class="prod__price">99.900 kr.-</p>
-                <label>
-                Fjöldi:
-                <input type="number" value="1">
-                </label>
-                <button class=btn><img src="../img/cart.svg">setja í körfu</button>
             </div>
         </div>
+    </header>
+    <main>
 
-        <div class="product-card">
-                <div class="product__img"> 
-                    <img src="../img/pineapple.jpg" alt="pineapple">
-                </div>
-                <div class="product__info">
-                       <h2>Ananas drykkur</h2>
-                        <p>Fólk er alveg „ananas“ yfir þessum drykk.</p>
-                       
+        <div class="grid">
+
+            <div class="prod__grid__row">
+                <div class="product-card">
+                    <div class="product__img">
+                        <img src="../img/watch.jpg" alt="watch">
                     </div>
-                <div class="product__order">
-                    <p class="prod__price">4.900 kr.-</p>
-                    <label>
-                    Fjöldi:
-                    <input type="number" value="1">
-                    </label>
-                    <button class="btn"><img src="../img/cart.svg">setja í körfu</button>
-                </div>
-        </div>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2> Ótrúlegt úr</h2>
+                            <p>Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
 
-        <div class="product-card">
-                <div class="product__img"> 
-                    <img src="../img/gameboy.jpg" alt="gameboy">
-                </div>
-                <div class="product__info">
-                       <h2>Gameboy</h2>
-                        <p>Hver man ekki eftir gameboy?</p>
-                        
+                        </div>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">99.900 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
                     </div>
-                <div class="product__order">
-                    <p class="prod__price">59.999 kr.-</p>
-                    <label>
-                    Fjöldi:
-                    <input type="number" value="1">
-                    </label>
-                    <button class="btn"><img src="../img/cart.svg">setja í körfu</button>
                 </div>
-        </div>
 
-    
-
-    
-            <div class="product-card">
-                <div class="product__img"> 
-                    <img src="../img/shoes.jpg" alt="shoes">
-                </div>
-                <div class="product__info">
-                       <h2>Hlaupskór</h2>
-                        <p>Þú munt hlaupa hratt í þessum.</p>
-                        
+                <div class="product-card">
+                    <div class="product__img">
+                        <img src="../img/pineapple.jpg" alt="pineapple">
                     </div>
-                <div class="product__order">
-                    <p class="prod__price">19.900 kr.-</p>
-                    <label>
-                    Fjöldi:
-                    <input type="number" value="1">
-                    </label>
-                    <button class="btn"><img src="../img/cart.svg">setja í körfu</button>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2>Ananas drykkur</h2>
+                            <p>Fólk er alveg „ananas“ yfir þessum drykk.</p>
+
+                        </div>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">4.900 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="product-card">
-                    <div class="product__img"> 
+
+                <div class="product-card">
+                    <div class="product__img">
+                        <img src="../img/gameboy.jpg" alt="gameboy">
+                    </div>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2>Gameboy</h2>
+                            <p>Hver man ekki eftir gameboy?</p>
+
+                        </div>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">59.999 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product__img">
+                        <img src="../img/shoes.jpg" alt="shoes">
+                    </div>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2>Hlaupskór</h2>
+                            <p>Þú munt hlaupa hratt í þessum.</p>
+
+                        </div>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">19.900 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product__img">
                         <img src="../img/headphones.jpg" alt="headphones">
                     </div>
-                    <div class="product__info">
-                           <h2>Hágæða heyrnatól</h2>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2>Hágæða heyrnatól</h2>
                             <p>Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum.
                                 Höfum við minnst á að þau eru hágæða?</p>
-                            
+
                         </div>
-                    <div class="product__order">
-                        <p class="prod__price">39.999 kr.-</p>
-                        <label>
-                        Fjöldi:
-                        <input type="number" value="1">
-                        </label>
-                        <button class="btn"><img src="../img/cart.svg">setja í körfu</button>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">39.999 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
                     </div>
-            </div>
-    
-            <div class="product-card">
-                    <div class="product__img"> 
+                </div>
+
+                <div class="product-card">
+                    <div class="product__img">
                         <img src="../img/camera.jpg" alt="camera">
                     </div>
-                    <div class="product__info">
-                           <h2>Mögnuð myndavél</h2>
+                    <div class="product__cont">
+                        <div class="product__info">
+                            <h2>Mögnuð myndavél</h2>
                             <p>Taktu mynd af öllu sem þú sérð.</p>
-                            
+
                         </div>
-                    <div class="product__order">
-                        <p class="prod__price">1.999.900 kr.-</p>
-                        <label>
-                        Fjöldi:
-                        <input type="number" value="1">
-                        </label>
-                        <button class="btn"><img src="../img/cart.svg">setja í körfu</button>
+                        <div class="product__order">
+                            <div class="product__order__info">
+                                <p class="prod__price">1.999.900 kr.-</p>
+                                <p>Fjöldi</p>
+                            </div>
+                            <div class="product__input">
+                                <input type="number" value="1">
+                                <button><img src="../img/cart.svg">setja í körfu</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
             </div>
-    
+
         </div>
-    
-    </div>
-</main>
-<footer>
+    </main>
+    <footer>
         <div class="footer__grid">
             <div class="footer__grid__row">
-        <div class="footer__list">
-            <ul>
-                <h2>Vöruflokkar</h2>
-                <li><a href="products.html">Nauðsynjavörur</a></li>
-                <li><a href="products.html">Frábærar vörur</a></li>
-                <li><a href="products.html">Ómissandi vörur</a></li>
-                <li><a href="products.html">Ótrúlegar vörur</a></li>
-                <li><a href="products.html">Magnaðar vörur</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer__list">
-            <ul>
-                <h2>Vöruflokkar</h2>
-                <li><a href="products.html">Trylltar vörur</a></li>
-                <li><a href="products.html">Geggjaðar vörur</a></li>
-                <li><a href="products.html">vörur</a></li>
-                <li><a href="products.html">Fáránlegar vörur</a></li>
-                <li><a href="products.html">Klikkaðar vörur</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="footer__grid__row">
-        
-        <div class="footer__list">
-            <ul>
-                <h2>Vöruflokkar</h2>
-                <li><a href="products.html">Nýjar vörur</a></li>
-                <li><a href="products.html">Gamlar vörur</a></li>
-                <li><a href="products.html">Skrítnar vörur</a></li>
-            </ul>
-        </div>
-        <div class=footer__list>
-            <ul>
-                <h2>Síður</h2>
-                <li><a href="products.html">Allar vörur</a></li>
-                <li><a href="staff.html">Starfsfólk</a></li>
-                <li><a href="cart.html">Karfa</a></li>
-            </ul>
-        </div>
-        </div>
-        </div>
-                <div class="bottom--center">© 2018 Vöruhúsið</div>
-        </footer>
+                <div class="footer__list">
+                    <ul>
+                        <h2>Vöruflokkar</h2>
+                        <li><a href="products.html">Nauðsynjavörur</a></li>
+                        <li><a href="products.html">Frábærar vörur</a></li>
+                        <li><a href="products.html">Ómissandi vörur</a></li>
+                        <li><a href="products.html">Ótrúlegar vörur</a></li>
+                        <li><a href="products.html">Magnaðar vörur</a></li>
+                    </ul>
+                </div>
 
-  </body>
+                <div class="footer__list">
+                    <ul>
+                        <h2>Vöruflokkar</h2>
+                        <li><a href="products.html">Trylltar vörur</a></li>
+                        <li><a href="products.html">Geggjaðar vörur</a></li>
+                        <li><a href="products.html">vörur</a></li>
+                        <li><a href="products.html">Fáránlegar vörur</a></li>
+                        <li><a href="products.html">Klikkaðar vörur</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__grid__row">
+
+                <div class="footer__list">
+                    <ul>
+                        <h2>Vöruflokkar</h2>
+                        <li><a href="products.html">Nýjar vörur</a></li>
+                        <li><a href="products.html">Gamlar vörur</a></li>
+                        <li><a href="products.html">Skrítnar vörur</a></li>
+                    </ul>
+                </div>
+                <div class=footer__list>
+                    <ul>
+                        <h2>Síður</h2>
+                        <li><a href="products.html">Allar vörur</a></li>
+                        <li><a href="staff.html">Starfsfólk</a></li>
+                        <li><a href="cart.html">Karfa</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom--center">© 2018 Vöruhúsið</div>
+    </footer>
+
+</body>
+
 </html>
