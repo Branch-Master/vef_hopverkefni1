@@ -30,9 +30,7 @@ header{
     width:100%;
 
     button a{
-        transition: color 0.3s linear;
-        -webkit-transition: color 0.3s linear;
-        -moz-transition: color 0.3s linear;
+        transition: color 0.4s ease;
         font-size: 1.6vh;
     }
 
@@ -51,11 +49,23 @@ header ul{
     display: flex;
     flex-direction: row;
     margin: auto;
+
+    li{
+        margin: 10px;
+    }
+
     li a{
         transition: color 0.4s ease;
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
     }
     li a:hover{
         color: white;
+    }
+
+    li .pages__selected {
+        text-decoration: underline;
     }
 }
 
@@ -87,9 +97,4 @@ header ul{
 .btn img{
     height: 2vh;
     width:20px;
-}
-
-//fall til að undirstrika valda blaðsíðu
-ul li .pages__selected {
-    text-decoration: underline;
 }
