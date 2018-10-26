@@ -11,7 +11,10 @@
     @include columns(4);
     padding-left: 0px;
     padding-right: 13.333px;
-    height: 200px;
+
+    @media(max-width : 1200px){
+        @include column
+    }
 
     img {
         width: 100%;
@@ -65,6 +68,25 @@
         }
     }
 }
+.grid__button{
+
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    button{
+        border: none;
+        width:100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 5px;
+        background-color: rgb(150,50,50);
+    }
+}
 
 .cart__form {
     display: flex;
@@ -73,6 +95,10 @@
     padding-left: 3px;
     padding-right: 3px;
     margin: auto;
+}
+
+.cart__form-col__input > p {
+    font-size: 20px;
 }
 
 .cart__form-col{
@@ -106,4 +132,8 @@
     justify-content: space-between;
     flex-direction: row;
     width: 60%;
+
+    select {
+        width: 25%;
+    }
 }
