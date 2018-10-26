@@ -1,0 +1,116 @@
+footer{  
+    background-color: rgb(200, 150, 150);
+    height: 310px;
+    width:100%;
+
+    @media (max-width: 1200px){
+        height: 500px
+    }
+}
+
+.footer__grid{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+
+    @media (max-width: 1200px){
+        flex-direction: column;
+    }
+}
+
+.footer__grid__row{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__list{
+    width: 50%;
+}
+
+//laga padding fyrir lista 2
+.footer__grid__row:nth-child(1) .footer__list:nth-child(1){
+    padding-right: 13.333px;
+
+    @media(max-width:1200px){
+        padding-left: 20px;
+    }
+}
+
+//laga padding fyrir lista 2
+.footer__grid__row:nth-child(1) .footer__list:nth-child(2){
+    padding-left: 6.667px;
+    padding-right: 10px;
+
+    @media(max-width:1200px){
+        padding-left: 10px;
+    }
+}
+
+//laga padding fyrir lista 3
+.footer__grid__row:nth-child(2) .footer__list:nth-child(1){
+    padding-left: 10px;
+    padding-right: 6.667px;
+
+    @media(max-width:1200px){
+        padding-left: 20px;
+    }
+}
+
+//laga padding fyrir lista 4
+.footer__grid__row:nth-child(2) .footer__list:nth-child(2){
+    padding-left: 13.333px;
+
+    @media(max-width:1200px){
+        padding-left: 10px;
+    }
+}
+
+//footer fiff
+footer h2{
+    margin-bottom: 20px;
+}
+
+//footer fiff
+footer p{
+    margin: auto;
+    margin-bottom: 0;
+}
+
+//footer fiff
+footer ul{
+    float:left;
+    list-style-type: none;
+}
+
+//setja bil á milli linka í footer
+footer ul li{
+    margin-bottom:15px;
+}
+
+// stemma af lista itemin á réttan stíl
+footer ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.4s ease;      //fade
+}
+
+//láta linka í fotter breyta um lit þegar hoverað yfir þá
+footer ul li a:hover{
+    color: black;
+}
+
+//til að stemma af C merkið
+.bottom--center{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
